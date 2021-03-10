@@ -1,0 +1,88 @@
+html {
+ margin: 0;
+ padding: 0;
+ font: 1.5vw Arial;
+ background: url("https://oxmc.github.io/UwUBotDiscord.github.io/images/background.png");
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-size: cover;
+ color: white;
+ font-size: 1.5vw;
+ max-width: 100%;
+ overflow-x: hidden;
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin-top: 8vw;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2vw;
+}
+.wave {
+ background: url("https://oxmc.github.io/UwUBotDiscord.github.io/images/waves.png");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 50%;
+ z-index: -1;
+}
+.header {
+ top: 0;
+ left: 0;
+ padding: 1vw;
+ background: #494949;
+ color: white;
+ position: fixed;
+ width: 100vw;
+}
+.headertext {
+font-weight: 900;
+font-size: 25px;
+}
+
+.textbigcenter {
+text-align: center;
+font-weight: 900;
+font-size: 50px;
+}
+.textbold {
+font-weight: 900;
+font-size: 15px;
+}
+.textbuttoncenter {
+text-align: center;
+font-weight: 1000;
+font-size: 70px;
+}
+.centeredtext {
+text-align: center;
+font-weight: 500;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+.button:hover {
+  background-color: #00FFFF;
+  color: white;
+}
+.section {
+position: absolute;
+left: 0px;
+width: 100%;
+background-color: #233339;
+}

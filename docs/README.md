@@ -1,2 +1,2 @@
-# mcpiworlds
-this is the github page for the mcpiworlds website.
+# ObsidianOS
+this is the github page for the ObsidianOS website.

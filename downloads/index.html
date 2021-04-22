@@ -3,12 +3,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/gif" href="../images/siteimage.png">
-    <title>Astrobuild2</title>
+    <title>ObsidianOS Downloads</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/style.css" type="text/css">
     <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/loading.css" type="text/css">
-    <!-- Experimental galaxy scrollbar <link href="css/scrollbars/scrollbar.css" rel="stylesheet" type="text/css"> -->
-    <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/scrollbars/scrollbar2.css" type="text/css">
   </head>
     <body>
       <div class="loader">
@@ -23,18 +21,29 @@
 <div class="center">
 <div class="a">
   <h1>Download the latest version of ObsidianOS 7</h1>
-  <button id="btn1" class="btn"><i class="fa fa-download"></i> Download Obsidian OS 7 32bit</button>
-  <!--<button class="btn"><i class="fa fa-download"></i> Download Obsidian OS 7 Downloads 64bit</button></a>-->
+  <button onclick="Download('1')" id="dnlbtn" class="button2"><i id="icon1" class="fa fa-download"></i> Download Obsidian OS 7 32bit </button>
   <h1>Download the latest version of ObsidianOS 11 Big Sur</h1>
-  <button id="btn2" class="btn"><i class="fa fa-download"></i> Download Obsidian OS 11 Big Sur 64bit</button>
+  <button onclick="Download('2')" id="dnlbtn1" class="button2"><i id="icon2" class="fa fa-download"></i> Download Obsidian OS 11 Big Sur 64bit </button>
+  <h1>Download the latest version of the ObsidianOS Imager</h1>
+  <button onclick="Download('3')" id="dnlbtn1" class="button2"><i id="icon3" class="fa fa-download"></i> Download The ObsidianOS Imager </button>
   </div>
   <script>
-    document.getElementById('btn1').onclick = function() {
-      window.location.assign('https://mega.nz/file/Xo40xYyB#G8we4Yywt513368L-WVA3fVoi2OyAGxdI1iMfWN_Yig');
-    }​;​
-    document.getElementById('btn2').onclick = function() {
-      window.location.assign('https://mega.nz/file/qgATySCb#M0Oqd01AhBbjZXuwxWKv3eLj8JEetamJnREwK4-lEq0');
-    }​;​
+    var downloadbtn = document.getElementById("dnlbtn")
+
+function Download(id){
+    if ( id == "1" ) {
+      //alert("Downloading pi-apps");
+      //downloadbtn.innerHTML = "Loading";
+      downloadbtn.innerHTML = "";
+      document.getElementById("dnlbtn").className = "fa button2 fa-spinner";
+      document.getElementById("dnlbtn").className = "fa button2 fa-spinner";
+    } else if ( id == "repo" ) {
+      //alert("Redirecting to github repo")
+      window.location.assign('https://github.com/ObsidianOS7/Obsidian-OS');
+    } else {
+      alert("Invalid download id.")
+    }
+};
   </script>
 <footer>
 Copyright 2020-2021 ObsidianOS and oxmc

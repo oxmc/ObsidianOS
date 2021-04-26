@@ -49,6 +49,7 @@ fi
 #Inform user that the install has finished
 #Check if finished with errors
 if [ "${fwe}" == "1" ]; then
+  echo -e "\n"
   echo -e "This script finished with errors, Here are the errors: \n\e[91m$ers\e[39m"
   exit 1
 elif [ "${fwe}" == "0" ]; then

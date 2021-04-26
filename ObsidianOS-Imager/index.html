@@ -74,7 +74,7 @@
 </div>
 <div class="a">
   <h1>Download the latest version of the ObsidianOS-Imager for the raspberry pi</h1>
-  <button onclick="Download('1')" id="dnlbtn" class="button2"><i id="icon1" class="fa fa-download"></i> Download ObsidianOS-Imager rpi </button>
+  <button onclick="Download('1')" id="dnlbtn" class="button2"><i id="icon1" class="fa fa-download"></i> Download ObsidianOS-Imager rpi for armhf </button>
   <!--<h1>Download the latest version of ObsidianOS 11 Big Sur</h1>
   <button onclick="Download('2')" id="dnlbtn2" class="button2"><i id="icon2" class="fa fa-download"></i> Download Obsidian OS 11 Big Sur 64bit </button>
   <h1>Download the latest version of the ObsidianOS Imager</h1>
@@ -91,7 +91,7 @@ function Download(id){
       //downloadbtn.innerHTML = "Loading";
       downloadbtn.innerHTML = " Redirecting...";
       document.getElementById("dnlbtn").className = "fa button2 fa-spinner";
-      setTimeout(() => {  downloadbtn.innerHTML = " Download ObsidianOS-Imager rpi"
+      setTimeout(() => {  downloadbtn.innerHTML = " Download ObsidianOS-Imager rpi for armhf"
       document.getElementById("dnlbtn").className = "fa button2 fa-download" }, 1000);
       window.location.assign('https://oxmc.github.io/ObsidianOS/files/ob-imager_1.0_armhf.deb');
     } else if ( id == "2" ) {

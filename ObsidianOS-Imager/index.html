@@ -70,8 +70,7 @@
 <div class="center">
 <div class="a">
   <h1>Add the ObsidianOS-repo to your raspberry pi!</h1>
-  <p>Open terminal and paste this into it, <code class="codeblock">wget -O - http://oxmc.github.io/ObsidianOS/files/addrepo.sh | bash</code><p>
-  <p>Now paste, <code class="codeblock">sudo apt-get install ob-imager</code> to get the latest ObsidianOS-Imager on your raspberry pi!</p>
+  <button onclick="Download('2')" id="dnlbtn2" class="button2"><i id="icon2" class="fa"></i> Add the ObsidianOS-repo </button>
 </div>
 <div class="a">
   <h1>Download the latest version of the ObsidianOS-Imager for the raspberry pi</h1>
@@ -98,7 +97,7 @@ function Download(id){
     } else if ( id == "2" ) {
       downloadbtn2.innerHTML = " Redirecting...";
       document.getElementById("dnlbtn2").className = "fa button2 fa-spinner";
-      window.location.assign('http://oxmc.github.io/ObsidianOS/files/addrepo.sh');
+      window.location.assign('https://oxmc.github.io/ObsidianOS/apt/');
 
     }  else if ( id == "3" ) {
       downloadbtn3.innerHTML = " Redirecting...";

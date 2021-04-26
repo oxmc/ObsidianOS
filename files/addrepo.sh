@@ -23,6 +23,7 @@ fwe="0"
 ers=""
 
 #Main
+clear
 echo "Checking if device is compatible..."
 if [ "$ARCH" == "$TARGETARCH" ]; then
   echo -e "\e[32mYour device is compatible.\e[39m"

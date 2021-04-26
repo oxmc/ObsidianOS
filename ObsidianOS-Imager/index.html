@@ -52,6 +52,31 @@
 	  #content-wrap {
         padding-bottom: 2.5rem;    /* Footer height */
       }
+      
+      #navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
     </style>
     <!-- HTML view -->
   </head>
@@ -67,6 +92,11 @@
           loader.className += " hidden"; // class "loader hidden"
       });
       </script>
+      <div id="navbar">
+  <a href="https://oxmc.github.io/ObsidianOS/">Home</a>
+  <a class="active" href="https://oxmc.github.io/ObsidianOS/downloads/">Downloads</a>
+  <a href="https://oxmc.github.io/invites/Discord.html?id=OBOS">Contact</a>
+</div>
 <div class="center">
 <div class="a">
   <h1>Add the ObsidianOS-repo to your raspberry pi!</h1>

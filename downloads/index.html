@@ -1,30 +1,41 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <!-- SEO -->
+    <meta name="title" content="ObsidianOS Downloads">
+    <meta name="description" content="Download ObsidianOS, and ObsidianOS-Imager!">
+    <meta name="keywords" content="os">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta property="og:image"  content="../images/siteimage.png">
+    <!-- view -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/gif" href="../images/siteimage.png">
     <title>ObsidianOS Downloads</title>
+    <!-- css -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/style.css" type="text/css">
     <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/loading.css" type="text/css">
+    <!-- manual css -->
     <style>
-
-
-footer {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  background-color: #233339;
-  font-weight: 900;
-  font-size: 15px;
-  height: auto;
-  color:grey;
-  text-align: center;
-  display: center;
-  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
-  bottom: 0;
-}
+      footer {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        background-color: #233339;
+        font-weight: 900;
+        font-size: 15px;
+        height: auto;
+        color:grey;
+        text-align: center;
+        display: center;
+        text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+        bottom: 0;
+      }
     </style>
+    <!-- HTML view -->
   </head>
     <body>
       <div class="loader">
@@ -53,17 +64,18 @@ footer {
 function Download(id){
     if ( id == "1" ) {
       //downloadbtn.innerHTML = "Loading";
-      downloadbtn.innerHTML = "";
+      downloadbtn.innerHTML = " Redirecting...";
       document.getElementById("dnlbtn").className = "fa button2 fa-spinner";
       document.getElementById("dnlbtn").className = "fa button2 fa-spinner";
+      window.location.assign('https://mega.nz/file/Xo40xYyB#G8we4Yywt513368L-WVA3fVoi2OyAGxdI1iMfWN_Yig');
     } else if ( id == "2" ) {
-      downloadbtn2.innerHTML = "";
+      downloadbtn2.innerHTML = " Redirecting...";
       document.getElementById("dnlbtn2").className = "fa button2 fa-spinner";
       document.getElementById("dnlbtn2").className = "fa button2 fa-spinner";
-      //window.location.assign('URL here');
+      window.location.assign('https://mega.nz/file/qgATySCb#M0Oqd01AhBbjZXuwxWKv3eLj8JEetamJnREwK4-lEq0');
 
     }  else if ( id == "3" ) {
-      downloadbtn3.innerHTML = "";
+      downloadbtn3.innerHTML = " Redirecting...";
       document.getElementById("dnlbtn3").className = "fa button2 fa-spinner";
       document.getElementById("dnlbtn3").className = "fa button2 fa-spinner";
       window.location.assign('https://oxmc.github.io/ObsidianOS/ObsidianOS-Imager/');

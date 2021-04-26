@@ -34,6 +34,31 @@
         text-shadow: 0 1px rgba(255, 255, 255, 0.1);
         bottom: 0;
       }
+      
+      #navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
     </style>
     <!-- HTML view -->
   </head>
@@ -47,6 +72,12 @@
           loader.className += " hidden"; // class "loader hidden"
       });
       </script>
+      <div id="navbar">
+  <a href="https://oxmc.github.io/ObsidianOS/">Home</a>
+  <a class="active" href="https://oxmc.github.io/ObsidianOS/downloads/">Downloads</a>
+  <a href="https://oxmc.github.io/ObsidianOS/apt/">Apt-repo</a>
+  <a href="https://oxmc.github.io/invites/Discord.html?id=OBOS">Contact</a>
+</div>
 <div class="center">
 <div class="a">
   <h1>Download the latest version of ObsidianOS 7</h1>
@@ -63,15 +94,20 @@
 
 function Download(id){
     if ( id == "1" ) {
+      //downloadbtn.innerHTML = "Loading";
       downloadbtn.innerHTML = " Redirecting...";
+      document.getElementById("dnlbtn").className = "fa button2 fa-spinner";
       document.getElementById("dnlbtn").className = "fa button2 fa-spinner";
       window.location.assign('https://mega.nz/file/Xo40xYyB#G8we4Yywt513368L-WVA3fVoi2OyAGxdI1iMfWN_Yig');
     } else if ( id == "2" ) {
       downloadbtn2.innerHTML = " Redirecting...";
       document.getElementById("dnlbtn2").className = "fa button2 fa-spinner";
+      document.getElementById("dnlbtn2").className = "fa button2 fa-spinner";
       window.location.assign('https://mega.nz/file/qgATySCb#M0Oqd01AhBbjZXuwxWKv3eLj8JEetamJnREwK4-lEq0');
+
     }  else if ( id == "3" ) {
       downloadbtn3.innerHTML = " Redirecting...";
+      document.getElementById("dnlbtn3").className = "fa button2 fa-spinner";
       document.getElementById("dnlbtn3").className = "fa button2 fa-spinner";
       window.location.assign('https://oxmc.github.io/ObsidianOS/ObsidianOS-Imager/');
       

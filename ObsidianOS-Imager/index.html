@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- SEO -->
+    <meta name="title" content="ObsidianOS Downloads">
+    <meta name="description" content="Download ObsidianOS-Imager!">
+    <meta name="keywords" content="os">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta property="og:image"  content="../images/siteimage.png">
+    <!-- view -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/gif" href="../images/siteimage.png">
+    <title>ObsidianOS Downloads</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/style.css" type="text/css">
+    <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/loading.css" type="text/css">
+    <!-- manual css -->
+    <style>
+      footer {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        background-color: #233339;
+        font-weight: 900;
+        font-size: 15px;
+        height: auto;
+        color:grey;
+        text-align: center;
+        display: center;
+        text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+        bottom: 0;
+      }
+    </style>
+    <!-- HTML view -->
+  </head>
+    <body>
+      <div class="loader">
+          <img src="https://media4.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Loading..." />
+      </div>
+      <script>
+      window.addEventListener("load", function () {
+          const loader = document.querySelector(".loader");
+          loader.className += " hidden"; // class "loader hidden"
+      });
+      </script>
+<div class="center">
+<div class="a">
+  <h1>Download the latest version of the ObsidianOS-Imager for the raspberry pi</h1>
+  <button onclick="Download('1')" id="dnlbtn" class="button2"><i id="icon1" class="fa fa-download"></i> Download ObsidianOS-Imager rpi </button>
+  <!--<h1>Download the latest version of ObsidianOS 11 Big Sur</h1>
+  <button onclick="Download('2')" id="dnlbtn2" class="button2"><i id="icon2" class="fa fa-download"></i> Download Obsidian OS 11 Big Sur 64bit </button>
+  <h1>Download the latest version of the ObsidianOS Imager</h1>
+  <button onclick="Download('3')" id="dnlbtn3" class="button2"><i id="icon3" class="fa fa-download"></i> Download The ObsidianOS Imager </button>-->
+  </div>
+  <script>
+    var downloadbtn = document.getElementById("dnlbtn")
+    var downloadbtn2 = document.getElementById("dnlbtn2")
+    var downloadbtn3 = document.getElementById("dnlbtn3")
+
+function Download(id){
+    if ( id == "1" ) {
+      //downloadbtn.innerHTML = "Loading";
+      downloadbtn.innerHTML = " Redirecting...";
+      document.getElementById("dnlbtn").className = "fa button2 fa-spinner";
+      setTimeout(() => {  downloadbtn.innerHTML = " Download ObsidianOS-Imager rpi"
+      document.getElementById("dnlbtn").className = "fa button2 fa-download" }, 1000);
+      window.location.assign('https://oxmc.github.io/ObsidianOS/files/ob-imager_1.0_armhf.deb');
+    } else if ( id == "2" ) {
+      downloadbtn2.innerHTML = " Redirecting...";
+      document.getElementById("dnlbtn2").className = "fa button2 fa-spinner";
+      window.location.assign('https://mega.nz/file/qgATySCb#M0Oqd01AhBbjZXuwxWKv3eLj8JEetamJnREwK4-lEq0');
+
+    }  else if ( id == "3" ) {
+      downloadbtn3.innerHTML = " Redirecting...";
+      document.getElementById("dnlbtn3").className = "fa button2 fa-spinner";
+      window.location.assign('https://oxmc.github.io/ObsidianOS/ObsidianOS-Imager/');
+      
+      // Old location
+      //window.location.assign('https://oxmc.github.io/ObsidianOS/files/ob-imager_1.0_armhf.deb');
+    } else if ( id == "repo" ) {
+      //alert("Redirecting to github repo")
+      window.location.assign('https://github.com/ObsidianOS7/Obsidian-OS');
+    } else {
+      alert("Invalid download id.")
+    }
+};
+  </script>
+  <footer id="footer">
+    <p id="cp-text">
+      © Copyright 2021 ObsidianOS & oxmc. All rights reserved.
+    </p>
+  </footer>
+</div>
+</body>
+</html>

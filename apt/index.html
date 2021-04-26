@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- SEO -->
+    <meta name="title" content="ObsidianOS Downloads">
+    <meta name="description" content="Download ObsidianOS-Imager!">
+    <meta name="keywords" content="os">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta property="og:image"  content="../images/siteimage.png">
+    <!-- view -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/gif" href="../images/siteimage.png">
+    <title>ObsidianOS-Imager Downloads</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/style.css" type="text/css">
+    <link rel="stylesheet" href="https://oxmc.github.io/Astrobuild2/css/style/loading.css" type="text/css">
+    <!-- manual css -->
+    <style>
+      footer {
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: 100%;
+        background-color: #233339;
+        font-weight: 900;
+        font-size: 15px;
+        height: auto;
+        color:grey;
+        text-align: center;
+        display: center;
+        text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+        bottom: 0;
+      }
+      
+      .codeblock {
+        background-color: #eee;
+        border: 1px solid #999;
+        display: block;
+        padding: 20px;
+      }
+      
+      #page-container {
+        position: relative;
+        min-height: 100vh;
+      }
+
+	  #content-wrap {
+        padding-bottom: 2.5rem;    /* Footer height */
+      }
+    </style>
+    <!-- HTML view -->
+  </head>
+    <body>
+      <div id="page-container">
+        <div id="content-wrap">
+          <div class="loader">
+            <img src="https://media4.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Loading..." />
+          </div>
+            <script>
+              window.addEventListener("load", function () {
+              const loader = document.querySelector(".loader");
+              loader.className += " hidden"; // class "loader hidden"
+              });
+            </script>
+<div class="center">
+<div class="a">
+  <h1>Add the ObsidianOS-repo to your raspberry pi!</h1>
+  <p>Open terminal and paste this into it, <code class="codeblock">wget -O - http://oxmc.github.io/ObsidianOS/files/addrepo.sh | bash</code><p>
+  <p>Now paste, <code class="codeblock">sudo apt-get install ob-imager</code> to get the latest ObsidianOS-Imager on your raspberry pi!</p>
+</div>
+  </div>
+  <footer id="footer">
+    <p id="cp-text">
+      © Copyright 2021 ObsidianOS & oxmc. All rights reserved.
+    </p>
+  </footer>
+        </div>
+      </div>
+</body>
+</html>

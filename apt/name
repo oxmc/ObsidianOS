@@ -1,0 +1,11 @@
+#Repo Name
+ObsidianOS-repo
+
+#Repo URL
+https://oxmc.github.io/ObsidianOS/apt/debian
+
+#Enable Repo Message
+true
+
+#Repo Message
+To install ObsidianOS-Imager run 'sudo apt-get install obsidianos-imager'

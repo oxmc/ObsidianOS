@@ -39,7 +39,7 @@ if [ "$ARCH" == "$TARGETARCH" ]; then
     echo "Updating apt sources..."
     sudo apt-get update || error "Unable to run sudo apt-get update!"
     echo "ObsidianOS-repo has been added to your device!"
-    echo "To install the ObsidianOS-Imager run 'sudo apt-get install ob-imager'"
+    echo "To install the ObsidianOS-Imager run 'sudo apt-get install obsidianos-imager'"
   fi
 else
   echo "Your device is not compatible."

@@ -1,6 +1,6 @@
 {
     "imager": {
-        "latest_version": "1.1",
+        "latest_version": "1.2",
         "url": "https://oxmc.github.io/ObsidianOS/ObsidianOS-imager/"
     },
     "os_list": [
@@ -48,13 +48,23 @@
            "subitems": [
              {
                "name": "Obsidian OS 11 Big Sur (64-bit)",
-               "description": "Themed to look like MacOS ",
+               "description": "Themed to look like MacOS",
                "icon": "https://oxmc.github.io/ObsidianOS/images/osimage.png",
                "url": "https://mega.nz/file/qgATySCb#M0Oqd01AhBbjZXuwxWKv3eLj8JEetamJnREwK4-lEq0",
                "extract_size": 3967811584,
                "extract_sha256": "69d909fb67ea78d6b58b7efeabdfbf317df7ef54d39b43ba2016d4816e7b9511",
                "image_download_size": 1231874816,
                "release_date": "2021-23-3"
+             },
+             {
+               "name": "Obsidian OS 11 Big Sur v1.1 (64-bit)",
+               "description": "Themed to look like MacOS",
+               "icon": "https://oxmc.github.io/ObsidianOS/images/osimage.png",
+               "url": "https://drive.google.com/file/d/1XFxyX7N7EN1OtWse6C-G5r4l2XC5wUwc/view?usp=sharing",
+               "extract_size": 3967811584,
+               "extract_sha256": "69d909fb67ea78d6b58b7efeabdfbf317df7ef54d39b43ba2016d4816e7b9511",
+               "image_download_size": 1231874816,
+               "release_date": "2021-55
              }
            ]
         }

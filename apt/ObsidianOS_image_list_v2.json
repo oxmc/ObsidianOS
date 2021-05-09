@@ -67,6 +67,16 @@
                "release_date": "2021-55
              }
            ]
+        },
+        {
+            "name": "ObsidianOS XP (32-bit)",
+            "description": "Themed to look like WindowsXP ",
+            "icon": "https://oxmc.github.io/ObsidianOS/images/osimage.png",
+            "url": "https://drive.google.com/file/d/12RDmJQjQdT1t_7bEs-cIexB9jgfUm__h/view?usp=sharing",
+            "extract_size": 3967811584,
+            "extract_sha256": "8d28df44edb6f6416a8ee4ae0ad967f8edb32bfb3af0114daa013320a3392550",
+            "image_download_size": 1231874816,
+            "release_date": "2021-20-3"
         }
     ]
 }
